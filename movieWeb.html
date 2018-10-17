@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>midterm</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+	*{margin: 0; padding: 0; color: #333;}
+	
+	div#wrap{width: 100%;}
+	
+	div#main{
+		width: 100%;
+		height: ;100%;
+	}
+	
+	div#menu{
+		margin: 10px;
+		float: right;
+		margin-top: 40px;
+		margin-right: 150px;
+	}
+	
+	div#wrap h1 {
+		padding: 15px;
+		font-size: 18px;
+		text-decoration-line: underline;
+		color: #333;
+		display: inline;
+		position: fixed;
+
+
+		}
+	div#main h1.work{
+		right: 300px;
+		
+	}
+	
+	
+	div#main h1.about{
+		right: 220px;
+	}
+	
+	div#main div#menu h1.work:hover{
+		font-size: 20px;
+	} 
+	
+	div#main div#menu h1.about:hover{
+		font-size: 20px;
+	}
+	
+	div#main div#menu h1.about a:hover{
+		font-size: 20px;
+	} 
+	
+	
+	div#wrap h1 a{
+		color:#333;
+		font-style: italic;
+	}
+
+	
+	div.cameraImg{
+		clear: both;
+
+		
+	}
+	
+	img.camera{
+		width: 250px;
+		padding:10px;
+		align-content: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 120px;
+		padding-bottom: 230px;
+
+	}
+	
+	div#content{
+		width: 100%;
+		height: 300px;
+	}
+	
+	div#content p.film{
+		font-size: 30px;
+		font-style: italic; 
+		padding: 20px;
+		text-align: left;
+		width: 900px;
+		line-height: 50px;
+		padding: 15px;
+	}
+	
+	div#works{
+		margin-top: 20px;
+		width: 100%;
+		height: 600px;
+/*		display: none;
+*/		
+	}
+	
+	div#works img{
+		width:270px;
+	}
+	
+	div#works div.image{
+		width: 980px;
+		margin-left: 250px;
+	}
+	
+	div#works div.image p{
+		font-size: 20px;
+		padding: 13px;
+		text-align: center;
+	}
+	
+	div#works p.work2{
+		font-size: 20px;
+		padding: 15px;
+		width: 160px;
+		display: inline-block;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	
+	div#works div.works1, .works2, .works3{
+		display: inline-block;
+		padding: 10px;
+		margin-left: 30px;
+	}
+	
+	div#works div.works1{
+		margin-left:5px;
+	}
+	
+	div#works div.works1:hover{
+		cursor: pointer;
+	}
+	
+	div#works div.works2:hover{
+		cursor: pointer;
+	}
+	
+	div#works div.works3:hover{
+		cursor: pointer;
+	}
+	
+	footer{
+		background-color: #121212;
+	}
+	
+	footer div{
+		padding: 10px;
+	}
+	
+	footer p{
+		font-size: 12px;
+		text-align: center;
+		padding: 5px;
+		color: #F7F7F7;
+	}
+	
+	div.works1 img.workImg1:hover{
+			position: relative;
+   			-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    		-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    		animation-name: example;
+			-webkit-animation-timing-function: ease;
+			animation-fill-mode: both;
+		}
+	
+	div.works2 img.workImg2:hover{
+			position: relative;
+   			-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    		-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    		animation-name: example;
+			-webkit-animation-timing-function: ease;
+			animation-fill-mode: both;
+		}
+	
+	div.works3 img.workImg3:hover{
+			position: relative;
+   			-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    		-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    		animation-name: example;
+			-webkit-animation-timing-function: ease;
+			animation-fill-mode: both;
+		}
+	
+	@keyframes example {
+    0% {left:0px; top:0px;}
+	100%{left:0px; top:-15px;}
+		
+
+
+	
+
+</style>
+	
+
+
+	
+</head>
+
+<body>
+	<div id="wrap">
+		
+		<div id="main">
+		
+			<div id="menu">
+				<h1 class="work"><a href="#flimPoster">WORKS</a></h1>
+				<h1 class="about"><a href="#" onclick="myFunction()" >ABOUT</a></h1>
+			</div>
+		
+			<div class="cameraImg">
+				<img class="camera" src="movie/ccc.jpg" alt="camera">
+			</div>
+		
+		</div>
+		
+		<div id="content">
+			
+			<p class="film" onclick="changeText(this)">
+				<b>CLICK ME !
+				</b>
+			</p>
+			
+		</div>
+		
+		<div id="works">
+			
+			<p class="work2"><a name="flimPoster"><b>works_<br>flim poster</b></a></p>
+			
+			<div class="image">
+			
+				<div class="works1">
+					
+					<img class="workImg1" src="movie/2.jpg" alt="work1">
+					<p >500Days Of Summer</p>
+					
+				</div>
+			
+				<div class="works2">
+					
+					<img class="workImg2" src="movie/3.jpg" alt="work2">
+					<p>Leon</p>
+					
+				</div>
+			
+				<div class="works3">
+					
+					<img class="workImg3" src="movie/4.jpg" alt="work3">
+					<p>The Grand Budapest Hotel</p>
+					
+				</div>
+				
+			</div>
+		
+		</div>
+		
+		<footer>
+			
+			<div>
+				<p>Copyright © 2018 Jeong Jinseon all rights reserved.</p>
+			</div>
+			
+		</footer>
+		
+		
+	</div>
+	
+	<script>
+		function myFunction() {
+			alert("NOT YET !");
+		}
+		
+		function changeText(id) {
+    	id.innerHTML = "A film, also called a movie, motion picture, moving picture, theatrical film, or photoplay, <br>is a series of still images that,<br>when shown on a screen, create the illusion of moving images.";
+		}
+		
+
+		
+	</script>
+	
+</body>
+</html>
